@@ -9,14 +9,22 @@
 }
 
 #paleta2 {
-    background-color: red;
+    
 }
 
 #paleta3 {
-  background-color: blue;
+  
 }
 
 #paleta4 {
-  background-color: green;
+  
+}
+
+.pixel {
+    border: 1px solid black;
+    display: inline-block;
+    padding: 50px;
+    
+
 }
   
