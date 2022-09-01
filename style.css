@@ -1,7 +1,7 @@
 .color {
     border: 1px solid black;
     display: inline-block;
-    padding: 50px;
+    padding: 40px;
 }
 
 #paleta1 {
@@ -23,8 +23,6 @@
 .pixel {
     border: 1px solid black;
     display: inline-block;
-    padding: 50px;
-    
-
+    padding: 40px;
 }
   
