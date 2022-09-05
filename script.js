@@ -42,12 +42,12 @@ const palet = document.getElementsByClassName("nome");
             let recebe = palet[i];
             recebe.style.background = coresPaleta();
         
-            recebe.addEventListener("select", function() {
+            /* recebe.addEventListener("select", function() {
                 let pegaCor = document.getElementsByClassName("color nome");
                 for(let i = 0; i < pegaCor.length; i += 1) {
                pegaCor[i]
             }
-                } )
+                } ) */
             }
         }
 
@@ -95,23 +95,35 @@ const palet = document.getElementsByClassName("nome");
                        })
                    }
                }
+           /*  let chamaClass = document.querySelector(".selected")
+               function queRemove(event) {
+               /*   let adCor = document.getElementsByClassName("color nome"); */
+               /*  let color = document.querySelectorAll(".color")
+                 for(let i = 0; i < color.length; i += 1) {
+                    color[i].classList.remove("selected");
+                    event.target.classList.add("selected"); */ 
+                 /*    if(adCor[i] === adCor[0]) {
+                        adCor.classList.add("select")
+                    }
+                    else if(adCor[i] === adCor[1]) {
+                        adCor.classList.add("select")
+                    }
+
+                    else if(adCor[i] === adCor[2]) {
+                        adCor.classList.add("select")
+                    }
+
+                    else if(adCor[i] === adCor[3]) {
+                        adCor.classList.add("select")
+                    }
+                 } */
+               // }
+                //}
+/* queRemove(); */                 
+
            
-               function queRecebeCor() {
-                 let adCor = document.getElementsByClassName("pixel");
-                 for(let i = 0; i < adCor.length; i += 1) {
-                     adCor[i].addEventListener("click", function(){
-                     if(adCor[i].style.backgroundColor === "white") {
-                         ad[i] = paleta()
-                     }
-                    })
-                 }
-             }
-
-             queRecebeCor()
-
-             window.getComputedStyle(paleta(), queRecebeCor())
             
-    
+           
     
 
 
