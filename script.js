@@ -65,7 +65,7 @@ const palet = document.getElementsByClassName("nome");
             }
             let abc = JSON.stringify(vazio)
              console.log(JSON.stringify(vazio))
-             localStorage.setItem("color-palette", abc)
+             localStorage.setItem("colorPalette", abc)
             }
            
             function verificaStorage() {
@@ -95,31 +95,31 @@ const palet = document.getElementsByClassName("nome");
                        })
                    }
                }
-           /*  let chamaClass = document.querySelector(".selected")
-               function queRemove(event) {
-               /*   let adCor = document.getElementsByClassName("color nome"); */
-               /*  let color = document.querySelectorAll(".color")
-                 for(let i = 0; i < color.length; i += 1) {
-                    color[i].classList.remove("selected");
-                    event.target.classList.add("selected"); */ 
-                 /*    if(adCor[i] === adCor[0]) {
-                        adCor.classList.add("select")
+             
+               let chamaClass = document.querySelector(".selected")
+               function queRemove(event)  {
+                   let color = document.querySelectorAll(".color");
+                console.log(color)
+                    for(let i = 0; i < color.length; i += 1) {
+                       color[i].classList.remove("selected");
+                       //event.target.classList.add("selected");
                     }
-                    else if(adCor[i] === adCor[1]) {
-                        adCor.classList.add("select")
+                    event.target.classList.add("selected");
+
+                    }
+                function adPixel() {
+                   let pegaPixel = document.querySelectorAll(".color")
+                    for(let i = 0; i < pegaPixel.length; i += 1) {
+                        pegaPixel[i].addEventListener("click", queRemove)
                     }
 
-                    else if(adCor[i] === adCor[2]) {
-                        adCor.classList.add("select")
-                    }
+                }
+                   
+                  
+             
+ //queRemove(chamaClass);  
 
-                    else if(adCor[i] === adCor[3]) {
-                        adCor.classList.add("select")
-                    }
-                 } */
-               // }
-                //}
-/* queRemove(); */                 
+adPixel(); 
 
            
             
