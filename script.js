@@ -59,12 +59,12 @@ const palet = document.getElementsByClassName("nome");
     
         function salveLocal() {
             let vazio = []
-            for(let i = 1; i < palet.length; i += 1) {
+            for(let i = 0; i < palet.length; i += 1) {
                 vazio.push(palet[i].style.backgroundColor)
-                console.log(palet[i].style.backgroundColor)
+              //  console.log(palet[i].style.backgroundColor)
             }
             let abc = JSON.stringify(vazio)
-             console.log(JSON.stringify(vazio))
+            // console.log(JSON.stringify(vazio))
              localStorage.setItem("colorPalette", abc)
             }
            
@@ -74,14 +74,14 @@ const palet = document.getElementsByClassName("nome");
                 }
                 return false
                }
-               console.log(verificaStorage())
+             //  console.log(verificaStorage())
                if(verificaStorage()) {
                 paleta() 
                 salveLocal()
                }
                else {
                 let recupera = JSON.parse(localStorage.getItem("color-palette"))
-                console.log(recupera)
+               // console.log(recupera)
                  for(let i = 0; i < palet.length; i += 1) {
                     palet[i].style.backgroundColor = recupera[i]
                  }
@@ -96,10 +96,12 @@ const palet = document.getElementsByClassName("nome");
                    }
                }
              
-               let chamaClass = document.querySelector(".selected")
+               let chamaClass = document.querySelector(".selected");
+               let color = document.querySelectorAll(".color");
+
                function queRemove(event)  {
-                   let color = document.querySelectorAll(".color");
-                console.log(color)
+                   //let color = document.querySelectorAll(".color");
+               // console.log(color)
                     for(let i = 0; i < color.length; i += 1) {
                        color[i].classList.remove("selected");
                        //event.target.classList.add("selected");
@@ -114,12 +116,36 @@ const palet = document.getElementsByClassName("nome");
                     }
 
                 }
+
+                function colorPixel() {
+                    let meusPixeis = document.querySelectorAll(".pixel");
+                   // let asPalet = document.querySelector("#color-palette");
+                    //let guardaCor = document.querySelector(".selected")
+                    for(let i = 0; i < meusPixeis.length; i += 1) {
+                     meusPixeis[i].addEventListener("click", function(event) {
+                        let guardaCor = document.querySelector(".selected")
+                        console.log(guardaCor.style.backgroundColor);
+                       event.target.style.backgroundColor = guardaCor.style.backgroundColor
+                      /*   for(let i = 0; i < asPalet.length; i += 1) {
+                            if(asPalet[i].style.backgroundColor === guardaCor.style.backgroundColor) {
+                                meusPixeis[i].style.backgroundColor = guardaCor.style.backgroundColor
+                            }
+                        } */
+                     })
+                    }
+
+                }
+
+                
+
+
                    
                   
              
  //queRemove(chamaClass);  
 
 adPixel(); 
+colorPixel();
 
            
             
