@@ -49,11 +49,16 @@ const palet = document.getElementsByClassName("nome");
             }
                 } ) */
             }
+
+            //localStorage.setItem("colorPalette")
         }
 
         function botao() {
             var oBotao = document.getElementById("button-random-color");
             oBotao.addEventListener("click", paleta);
+
+           // localStorage.setItem("colorPalette")
+            
         }
         botao() 
     
@@ -80,9 +85,10 @@ const palet = document.getElementsByClassName("nome");
                 salveLocal()
                }
                else {
-                let recupera = JSON.parse(localStorage.getItem("color-palette"))
-               // console.log(recupera)
+                let recupera = JSON.parse(localStorage.getItem("colorPalette"))
+                console.log(recupera)
                  for(let i = 0; i < palet.length; i += 1) {
+                    console.log(palet[i], recupera[i])
                     palet[i].style.backgroundColor = recupera[i]
                  }
                }
@@ -136,6 +142,19 @@ const palet = document.getElementsByClassName("nome");
 
                 }
 
+                function clear() {
+                    let meusPixeis = document.querySelectorAll(".pixel");
+                    let botaoLimpa = document.querySelector("#clear-board");
+
+                    botaoLimpa.addEventListener("click", function() {
+                        for(let i = 0; i < meusPixeis.length; i += 1){
+                            meusPixeis[i].style.backgroundColor = "white"
+                        }
+                    })
+                    
+
+                }
+
                 
 
 
@@ -146,6 +165,7 @@ const palet = document.getElementsByClassName("nome");
 
 adPixel(); 
 colorPixel();
+clear();
 
            
             
