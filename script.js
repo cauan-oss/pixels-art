@@ -148,7 +148,7 @@ const palet = document.getElementsByClassName("nome");
 
                     botaoLimpa.addEventListener("click", function() {
                         for(let i = 0; i < meusPixeis.length; i += 1){
-                            meusPixeis[i].style.backgroundColor = "white"
+                            meusPixeis[i].style.backgroundColor = "white";
                         }
                     })
                     
