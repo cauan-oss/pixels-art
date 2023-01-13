@@ -1,5 +1,7 @@
-const palet = document.querySelectorAll('.color')
-const button = document.querySelector('#button-random-color')
+const palet = document.querySelectorAll('.color');
+const paletBlack = document.querySelector('.color-black');
+const button = document.querySelector('#button-random-color');
+const pixelFrame = document.createElement('div');
 
 const randomColors = () => {
     let r = Math.floor(Math.random() * 255),
@@ -9,13 +11,28 @@ const randomColors = () => {
     return generateRandom
 }
 
-/* eventos de click */
-button.addEventListener('click', () => {
-    for (let i = 0; i <= palet.length; i += 1){
+const buttonGenerateColors = () => {
+     let recebeCores = '';
+    for (let i = 1; i <= palet.length; i += 1){
+     recebeCores = palet[i].style.background = randomColors();
+       localStorage.setItem('colorPalette', recebeCores);
+    };
+    localStorage.getItem(recebeCores)
+    
+}
+const randomColorsInit = () => {
+    for (let i = 1; i <= palet.length; i += 1){
         palet[i].style.background = randomColors();
-    }
+    };
+}
 
-})
+/* eventos de click */
+button.addEventListener('click', buttonGenerateColors)
+
+/*quadros de pixeis*/
+
+
+
 
 
 

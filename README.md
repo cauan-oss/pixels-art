@@ -57,4 +57,13 @@ A primeira cor na paleta criada no requisito 2 deve ser preta. As demais cores p
 O que será testado:
 
 A primeira cor da paleta deve possuir background-color  preto;
+
+Requistio 5
+As cores da paleta de cores que foram geradas aleatoriamente devem ser mantidas após recarregar a página
+
+O que será testado:
+
+A paleta gerada deve ser salva no localStorage com a chave colorPalette;
+
+A paleta gerada deve ser mantida ao recarregar a página.
 -->
