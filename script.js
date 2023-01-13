@@ -11,12 +11,23 @@ const randomColors = () => {
     return generateRandom
 }
 
-/* eventos de click */
-button.addEventListener('click', () => {
+const buttonGenerateColors = () => {
+     let recebeCores = '';
+    for (let i = 1; i <= palet.length; i += 1){
+     recebeCores = palet[i].style.background = randomColors();
+       localStorage.setItem('colorPalette', recebeCores);
+    };
+    localStorage.getItem(recebeCores)
+    
+}
+const randomColorsInit = () => {
     for (let i = 1; i <= palet.length; i += 1){
         palet[i].style.background = randomColors();
     };
-})
+}
+
+/* eventos de click */
+button.addEventListener('click', buttonGenerateColors)
 
 /*quadros de pixeis*/
 
