@@ -1,5 +1,11 @@
-const palet = document.querySelectorAll('.color')
-const button = document.querySelector('#button-random-color')
+const palet = document.querySelectorAll('.color');
+const paletBlack = document.querySelector('.color-black');
+const button = document.querySelector('#button-random-color');
+const pixelFrame = document.createElement('div');
+pixelFrame.setAttribute('id', 'pixel-board');
+const childPixel = document.createElement('div');
+childPixel.setAttribute('class', 'pixel');
+pixelFrame.appendChild(childPixel);
 
 const randomColors = () => {
     let r = Math.floor(Math.random() * 255),
@@ -11,11 +17,15 @@ const randomColors = () => {
 
 /* eventos de click */
 button.addEventListener('click', () => {
-    for (let i = 0; i <= palet.length; i += 1){
+    for (let i = 1; i <= palet.length; i += 1){
         palet[i].style.background = randomColors();
-    }
-
+    };
 })
+
+/*quadros de pixeis*/
+
+
+
 
 
 
