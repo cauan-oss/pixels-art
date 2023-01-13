@@ -1,4 +1,21 @@
+const palet = document.querySelectorAll('.color')
+const button = document.querySelector('#button-random-color')
 
+const randomColors = () => {
+    let r = Math.floor(Math.random() * 255),
+        g = Math.floor(Math.random() * 255),
+         b = Math.floor(Math.random() * 255)
+    let generateRandom = `rgb(${r}, ${g}, ${b})`
+    return generateRandom
+}
+
+/* eventos de click */
+button.addEventListener('click', () => {
+    for (let i = 0; i <= palet.length; i += 1){
+        palet[i].style.background = randomColors();
+    }
+
+})
 
 
 
@@ -204,9 +221,9 @@
              
  //queRemove(chamaClass);  
 
-adPixel(); 
+/* adPixel(); 
 colorPixel();
-clear();
+clear(); */
 //salvaDesenhoPaleta();
 //queVerifica();
 
