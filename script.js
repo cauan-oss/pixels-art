@@ -1,4 +1,28 @@
-const palet = document.getElementsByClassName("nome");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* const palet = document.getElementsByClassName("nome");
 
 
  function coresPaleta(){
@@ -130,7 +154,7 @@ const palet = document.getElementsByClassName("nome");
                 })
                 
 
-            }
+            } */
 
              /*  function salvaDesenhoPaleta() {
                 let meusPixeis = document.querySelectorAll(".pixel");

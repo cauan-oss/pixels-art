@@ -43,4 +43,18 @@ A paleta de cores deve estar posicionada abaixo do título Paleta de Cores;
 A paleta de cores não pode conter cores repetidas.
 
 Requisito 3 
+
+A primeira cor na paleta criada no requisito 2 deve ser preta. As demais cores podem ser escolhidas livremente.
+
+O que será testado:
+
+A primeira cor da paleta deve possuir background-color  preto;
+
+Requisito 4 
+
+A primeira cor na paleta criada no requisito 2 deve ser preta. As demais cores podem ser escolhidas livremente.
+
+O que será testado:
+
+A primeira cor da paleta deve possuir background-color  preto;
 -->
