@@ -1,13 +1,15 @@
 # :construction: README customizado em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
+<!-- 
+REQUSITO 1
+A página deve conter o título "Paleta de Cores"
 
-Para deixá-lo com a sua cara, basta alterar o seguinte arquivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README.md
+O título deverá ficar dentro de uma tag h1 com o id denominado title;
 
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
+O texto do título deve ser exatamente "Paleta de Cores".
+
+O que será testado:
+
+O título deve possuir a tag h1;
+O título deve possuir o id title;
+O título deve ser Paleta de Cores
 -->
