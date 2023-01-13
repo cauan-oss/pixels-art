@@ -2,10 +2,6 @@ const palet = document.querySelectorAll('.color');
 const paletBlack = document.querySelector('.color-black');
 const button = document.querySelector('#button-random-color');
 const pixelFrame = document.createElement('div');
-pixelFrame.setAttribute('id', 'pixel-board');
-const childPixel = document.createElement('div');
-childPixel.setAttribute('class', 'pixel');
-pixelFrame.appendChild(childPixel);
 
 const randomColors = () => {
     let r = Math.floor(Math.random() * 255),
