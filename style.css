@@ -1,3 +1,29 @@
+body {
+    background-image: radial-gradient(circle, #5c0067 0%, #00d4ff 100%);
+}
+
+#button-random-color {
+   margin-left: 55vh;
+    min-width: 300px;
+    min-height: 60px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #313133;
+    background: #4FD1C5;
+  background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    }
+
 .color {
     border: 1px solid black;
     display: inline-block;
@@ -20,6 +46,12 @@
   
 }
 
+#pixel-board {
+    display: block;
+    margin-left: 55vh;
+    margin-top: 5vh;
+}
+
 .pixel {
     border: 1px solid black;
     display: inline-block;
@@ -27,5 +59,16 @@
     height: 40px;
     width: 40px;
     background-color: white;
+}
+
+#color-palette {
+    margin-left: 55vh;
+}
+
+#title {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 85px;
+    margin-left: 55vh;
+    color: aqua;
 }
   
