@@ -28,6 +28,7 @@ body {
     border: 1px solid black;
     display: inline-block;
     padding: 40px;
+    border-radius: 15px;
 }
 
 #paleta1 {
@@ -50,6 +51,7 @@ body {
     display: block;
     margin-left: 55vh;
     margin-top: 5vh;
+    
 }
 
 .pixel {
@@ -59,6 +61,8 @@ body {
     height: 40px;
     width: 40px;
     background-color: white;
+    border-radius: 15px;
+    background-image: none;
 }
 
 #color-palette {
@@ -69,6 +73,12 @@ body {
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 85px;
     margin-left: 55vh;
-    color: aqua;
+    color: rgb(247, 247, 247);
+}
+
+#login {
+    margin-left: 55vh;
+    margin-top: 15vw;
+    margin-bottom: 15vh;s
 }
   

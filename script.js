@@ -1,4 +1,4 @@
-const palet = document.querySelectorAll('.color');
+let palet = document.querySelectorAll('.color');
 const paletBlack = document.querySelector('.color-black');
 const button = document.querySelector('#button-random-color');
 const pixelFrame = document.createElement('div');
@@ -6,37 +6,38 @@ const pixelFrame = document.createElement('div');
 const randomColors = () => {
     let r = Math.floor(Math.random() * 255),
         g = Math.floor(Math.random() * 255),
-         b = Math.floor(Math.random() * 255)
-    let generateRandom = `rgb(${r}, ${g}, ${b})`
-    return generateRandom
+        b = Math.floor(Math.random() * 255)
+    let random = `rgb(${r}, ${g}, ${b})`
+    return random
 }
+
 
 const buttonGenerateColors = () => {
-     let recebeCores = '';
+    let recebeCores;
     for (let i = 1; i <= palet.length; i += 1){
-     recebeCores = palet[i].style.background = randomColors();
-       localStorage.setItem('colorPalette', recebeCores);
-    };
-    localStorage.getItem(recebeCores)
-    
+     // recebeCores = palet[i].style.background = randomColors();
+ }
+    return recebeCores
+};
+
+const functionLocal = () => {
+    let array = [];
+    for (let i = 0; i <= palet.length; i += 1) {
+     
+    }
 }
-const randomColorsInit = () => {
-    for (let i = 1; i <= palet.length; i += 1){
-        palet[i].style.background = randomColors();
-    };
-}
+
+
+//const guarda = console.log(objetos)
 
 /* eventos de click */
-button.addEventListener('click', buttonGenerateColors)
+button.addEventListener('click', objetos)
 
-/*quadros de pixeis*/
+/*funcoes*/
 
-
-
-
-
-
-
+buttonGenerateColors();
+//salveLocal()
+functionLocal()
 
 
 
